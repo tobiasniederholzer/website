@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Tobias Niederholzer</title>
+  <meta name="description" content="Get in touch about a website, a game or a catered event.">
+  <link rel="canonical" href="https://tobiasniederholzer.xyz/contact.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">Tobias Niederholzer</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="website-design.html">Website design</a></li>
+          <li><a href="game-design.html">Game design</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <div class="wrap">
+        <h1 class="display">Contact</h1>
+        <p class="lede">Tell me what you're planning. I reply to every message within two working days.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-grid">
+        <!-- Replace YOUR_FORM_ID with the ID from formspree.io (free plan) -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="row-2">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="topic">What is it about?</label>
+            <select id="topic" name="topic">
+              <option value="website">Website design</option>
+              <option value="game">Game design</option>
+              <option value="catering">Catering</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Goals, timing, budget, or for catering: date, place and number of guests"></textarea>
+          </div>
+
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+
+          <button class="button" type="submit">Send message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="details">
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a></dd>
+            <dt>Based in</dt>
+            <dd>Innsbruck, Tyrol, Austria</dd>
+            <dt>Working</dt>
+            <dd>On site in Tyrol, remote everywhere</dd>
+            <dt>Languages</dt>
+            <dd>German and English</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="imprint.html">Imprint</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
