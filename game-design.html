@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Game design | Tobias Niederholzer</title>
-  <meta name="description" content="Game design, level design and playable prototypes for digital and tabletop games.">
+  <title>Game design | Never Solutions</title>
+  <meta name="description" content="Game design, level design and playable prototypes for digital, mobile and tabletop games.">
+  <meta name="theme-color" content="#0f2624">
   <link rel="canonical" href="https://tobiasniederholzer.xyz/game-design.html">
+  <meta property="og:title" content="Game design | Never Solutions">
+  <meta property="og:description" content="Game design, level design and playable prototypes for digital, mobile and tabletop games.">
+  <meta property="og:url" content="https://tobiasniederholzer.xyz/game-design.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +19,11 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Never Solutions</span></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">Tobias Niederholzer</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Never Solutions</a>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="website-design.html">Website design</a></li>
@@ -28,80 +33,106 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="contact.html">Start a project</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-intro">
+    <section class="page-hero">
       <div class="wrap">
-        <h1 class="display">Game design</h1>
-        <p class="lede">Levels and systems designed like buildings: players always know where they are, what they can do next, and why it matters.</p>
+        <h1 class="page-title split">Game design</h1>
+        <p class="lede reveal">Levels and systems designed like buildings: players always know where they are, what they can do next, and why it matters.</p>
+        <div class="tagline reveal"><span class="chip">Level design</span><span class="chip">Game systems</span><span class="chip">Prototypes</span><span class="chip">Location-based games</span></div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap split">
-        <h2>What I work on</h2>
-        <ul class="services">
-          <li>
-            <h3>Level and world design</h3>
-            <p>Layouts, sightlines and pacing that guide players without signposts. Blockouts ready for your engine.</p>
-          </li>
-          <li>
-            <h3>Game concepts and systems</h3>
-            <p>Core loops, progression and rules, written up in a design document your team can build from.</p>
-          </li>
-          <li>
-            <h3>Playable prototypes</h3>
-            <p>A quick, rough version of an idea to find out whether it's fun before you commit to it.</p>
-          </li>
-          <li>
-            <h3>Location-based and mobile games</h3>
-            <p>Games that use the real world as the board: maps, places and the routes people walk.</p>
-          </li>
+      <div class="wrap split-cols">
+        <h2 class="split">What we work on</h2>
+        <ul class="offers">
+          <li><h3>Level and world design</h3><p>Layouts, sightlines and pacing that guide players without signposts. Blockouts ready for your engine.</p></li>
+          <li><h3>Concepts and systems</h3><p>Core loops, progression and rules, written up in a design document your team can build from.</p></li>
+          <li><h3>Playable prototypes</h3><p>A quick, rough version of an idea to find out whether it's fun before you commit to it.</p></li>
+          <li><h3>Location-based and mobile games</h3><p>Games that use the real world as the board: maps, places and the routes people walk.</p></li>
         </ul>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <h2 style="margin-bottom: 2rem;">How a project runs</h2>
-        <ol class="steps">
-          <li>
-            <h3>Idea</h3>
-            <p>We pin down the player, the platform and the feeling the game should leave behind.</p>
-          </li>
-          <li>
-            <h3>Paper and greybox</h3>
-            <p>Sketches and untextured levels to test layout and flow cheaply.</p>
-          </li>
-          <li>
-            <h3>Playtest</h3>
-            <p>Real players, observed closely. What confuses them gets redesigned.</p>
-          </li>
-          <li>
-            <h3>Handover</h3>
-            <p>Documented levels, systems and assets, ready for production.</p>
-          </li>
+        <div class="section-head">
+          <h2 class="split">How a project runs</h2>
+        </div>
+        <ol class="process">
+          <li><h3>Idea</h3><p>We pin down the player, the platform and the feeling the game should leave behind.</p></li>
+          <li><h3>Paper and greybox</h3><p>Sketches and untextured levels to test layout and flow cheaply.</p></li>
+          <li><h3>Playtest</h3><p>Real players, observed closely. Whatever confuses them gets redesigned.</p></li>
+          <li><h3>Handover</h3><p>Documented levels, systems and assets, ready for production.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="cta">
+    <section class="section">
       <div class="wrap">
-        <h2>Working on a game?</h2>
-        <a class="button" href="contact.html?topic=game">Talk about your game</a>
+        <div class="panel reveal">
+          <div>
+            <h2>What you get</h2>
+          </div>
+          <div>
+            <p class="muted">Design work that a team can actually build from, not just pretty concept art.</p>
+            <ul class="ticks">
+            <li>Design documents with clear rules and numbers</li>
+            <li>Level blockouts and flow diagrams</li>
+            <li>Playable prototypes for testing</li>
+            <li>Playtest notes with concrete changes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-orb" aria-hidden="true"></div>
+      <div class="wrap">
+        <h2 class="cta-title">Working on<br><em>a game?</em></h2>
+        <div class="cta-row">
+          <a class="btn" href="contact.html?topic=game">Talk about your game <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <p class="muted">Free first call, no obligation.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="imprint.html">Imprint</a></li>
-      </ul>
+      <div class="footer-top">
+        <div>
+          <h3>New project?</h3>
+          <a class="footer-mail" href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="website-design.html">Website design</a></li>
+            <li><a href="game-design.html">Game design</a></li>
+            <li><a href="catering.html">Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Never Solutions</p>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Never Solutions, Tyrol, Austria</span>
+        <button class="to-top" type="button">Back to top</button>
+      </div>
     </div>
   </footer>
 

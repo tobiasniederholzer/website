@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Website design | Tobias Niederholzer</title>
-  <meta name="description" content="Website design and development for studios, practices and small businesses in Tyrol and beyond.">
+  <title>Website design | Never Solutions</title>
+  <meta name="description" content="Website design and development for studios, practices and businesses in Tyrol and beyond.">
+  <meta name="theme-color" content="#0f2624">
   <link rel="canonical" href="https://tobiasniederholzer.xyz/website-design.html">
+  <meta property="og:title" content="Website design | Never Solutions">
+  <meta property="og:description" content="Website design and development for studios, practices and businesses in Tyrol and beyond.">
+  <meta property="og:url" content="https://tobiasniederholzer.xyz/website-design.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +19,11 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Never Solutions</span></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">Tobias Niederholzer</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Never Solutions</a>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="website-design.html" aria-current="page">Website design</a></li>
@@ -28,90 +33,108 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="contact.html">Start a project</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-intro">
+    <section class="page-hero">
       <div class="wrap">
-        <h1 class="display">Website design</h1>
-        <p class="lede">Websites that tell visitors who you are within seconds, load quickly on any phone, and stay easy for you to update.</p>
+        <h1 class="page-title split">Website design</h1>
+        <p class="lede reveal">Websites that say who you are within seconds, load instantly on any phone, and stay easy for you to update.</p>
+        <div class="tagline reveal"><span class="chip">Portfolio sites</span><span class="chip">Business websites</span><span class="chip">Landing pages</span><span class="chip">Redesigns</span></div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap split">
-        <h2>What I make</h2>
-        <ul class="services">
-          <li>
-            <h3>Portfolio and studio sites</h3>
-            <p>For architects, designers, photographers and makers. The work is the focus; the layout stays out of its way.</p>
-          </li>
-          <li>
-            <h3>Small business websites</h3>
-            <p>Clear pages for what you offer, where you are and how to book. Set up for search engines and Google Maps.</p>
-          </li>
-          <li>
-            <h3>Landing pages</h3>
-            <p>A single page for a launch, an event or a campaign, delivered in days rather than weeks.</p>
-          </li>
-          <li>
-            <h3>Redesigns</h3>
-            <p>A fresh look and structure for a site that has grown messy, keeping the content and search rankings you already have.</p>
-          </li>
+      <div class="wrap split-cols">
+        <h2 class="split">What we build</h2>
+        <ul class="offers">
+          <li><h3>Portfolio and studio sites</h3><p>For architects, designers, photographers and makers. The work leads; the layout stays out of its way.</p></li>
+          <li><h3>Business websites</h3><p>Clear pages for what you offer, where you are and how to book. Set up for Google search and Maps.</p></li>
+          <li><h3>Landing pages</h3><p>One focused page for a launch, an event or a campaign, delivered in days rather than weeks.</p></li>
+          <li><h3>Redesigns</h3><p>A new look and structure for a site that has grown messy, keeping the content and rankings you already have.</p></li>
+          <li><h3>Interactive experiences</h3><p>Animated, memorable sites with custom motion and interaction, built to stay fast.</p></li>
         </ul>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <h2 style="margin-bottom: 2rem;">How a project runs</h2>
-        <ol class="steps">
-          <li>
-            <h3>Brief</h3>
-            <p>A first call about your goals, audience and budget. You get a written proposal with a fixed price.</p>
-          </li>
-          <li>
-            <h3>Structure</h3>
-            <p>A site map and page layouts, agreed before any visual design starts.</p>
-          </li>
-          <li>
-            <h3>Design and build</h3>
-            <p>Typography, colour and imagery, built as a fast, accessible site you review as it grows.</p>
-          </li>
-          <li>
-            <h3>Launch</h3>
-            <p>Your domain connected, a short handover session, and support for the first month.</p>
-          </li>
+        <div class="section-head">
+          <h2 class="split">How a project runs</h2>
+        </div>
+        <ol class="process">
+          <li><h3>Brief</h3><p>A first call about goals, audience and budget. You receive a written proposal with a fixed price.</p></li>
+          <li><h3>Structure</h3><p>Site map and page layouts, agreed before any visual design starts.</p></li>
+          <li><h3>Design and build</h3><p>Typography, colour, motion and imagery, built as a fast site you review as it grows.</p></li>
+          <li><h3>Launch</h3><p>Domain connected, a handover session, and support for the first month.</p></li>
         </ol>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap split">
-        <h2>Included in every site</h2>
-        <div>
-          <p>Responsive layouts for phone, tablet and desktop. Accessible contrast and keyboard navigation. Basic search engine setup. Secure HTTPS hosting. A contact form that lands in your inbox.</p>
-          <p class="muted">Hosting can run free on GitHub Pages for static sites, or on the provider you already use.</p>
+      <div class="wrap">
+        <div class="panel reveal">
+          <div>
+            <h2>Included in every site</h2>
+          </div>
+          <div>
+            <p class="muted">No templates. Every site is designed for its owner and built by hand.</p>
+            <ul class="ticks">
+            <li>Responsive design for phone, tablet and desktop</li>
+            <li>Accessible contrast and keyboard navigation</li>
+            <li>Search engine basics and fast loading</li>
+            <li>Secure HTTPS hosting setup</li>
+            <li>A contact form that lands in your inbox</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="cta">
+      <div class="cta-orb" aria-hidden="true"></div>
       <div class="wrap">
-        <h2>Tell me about your website</h2>
-        <a class="button" href="contact.html?topic=website">Request a proposal</a>
+        <h2 class="cta-title">Let's build<br><em>your website.</em></h2>
+        <div class="cta-row">
+          <a class="btn" href="contact.html?topic=website">Request a proposal <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <p class="muted">Free first call, no obligation.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="imprint.html">Imprint</a></li>
-      </ul>
+      <div class="footer-top">
+        <div>
+          <h3>New project?</h3>
+          <a class="footer-mail" href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="website-design.html">Website design</a></li>
+            <li><a href="game-design.html">Game design</a></li>
+            <li><a href="catering.html">Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Never Solutions</p>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Never Solutions, Tyrol, Austria</span>
+        <button class="to-top" type="button">Back to top</button>
+      </div>
     </div>
   </footer>
 

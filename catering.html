@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Catering | Tobias Niederholzer</title>
+  <title>Catering | Never Solutions</title>
   <meta name="description" content="Seasonal catering for private dinners, openings and company events in Tyrol.">
+  <meta name="theme-color" content="#0f2624">
   <link rel="canonical" href="https://tobiasniederholzer.xyz/catering.html">
+  <meta property="og:title" content="Catering | Never Solutions">
+  <meta property="og:description" content="Seasonal catering for private dinners, openings and company events in Tyrol.">
+  <meta property="og:url" content="https://tobiasniederholzer.xyz/catering.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +19,11 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Never Solutions</span></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">Tobias Niederholzer</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Never Solutions</a>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="website-design.html">Website design</a></li>
@@ -28,90 +33,106 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="contact.html">Start a project</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-intro">
+    <section class="page-hero">
       <div class="wrap">
-        <h1 class="display">Catering</h1>
-        <p class="lede">Seasonal food from regional producers, planned around your space, your guests and the shape of the evening.</p>
+        <h1 class="page-title split">Catering</h1>
+        <p class="lede reveal">Seasonal food from regional producers, planned around your space, your guests and the shape of the evening.</p>
+        <div class="tagline reveal"><span class="chip">Private dinners</span><span class="chip">Openings</span><span class="chip">Company events</span><span class="chip">Celebrations</span></div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap split">
-        <h2>Occasions</h2>
-        <ul class="services">
-          <li>
-            <h3>Private dinners</h3>
-            <p>A seated menu cooked in your home or a venue you choose, for small groups.</p>
-          </li>
-          <li>
-            <h3>Openings and exhibitions</h3>
-            <p>Finger food and drinks for vernissages, studio openings and launches, served so guests can keep moving.</p>
-          </li>
-          <li>
-            <h3>Company and team events</h3>
-            <p>Lunches, workshops and celebrations, with clear pricing per guest.</p>
-          </li>
-          <li>
-            <h3>Celebrations</h3>
-            <p>Birthdays, anniversaries and garden parties, from buffet to family-style sharing plates.</p>
-          </li>
+      <div class="wrap split-cols">
+        <h2 class="split">Occasions</h2>
+        <ul class="offers">
+          <li><h3>Private dinners</h3><p>A seated menu cooked in your home or a venue of your choice, for small groups.</p></li>
+          <li><h3>Openings and exhibitions</h3><p>Finger food and drinks for vernissages, studio openings and launches, served so guests keep moving.</p></li>
+          <li><h3>Company and team events</h3><p>Lunches, workshops and celebrations, with clear pricing per guest.</p></li>
+          <li><h3>Celebrations</h3><p>Birthdays, anniversaries and garden parties, from buffet to family-style sharing plates.</p></li>
         </ul>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <h2 style="margin-bottom: 2rem;">From enquiry to evening</h2>
-        <ol class="steps">
-          <li>
-            <h3>Enquiry</h3>
-            <p>Send the date, location and number of guests. You'll hear back within two working days.</p>
-          </li>
-          <li>
-            <h3>Menu proposal</h3>
-            <p>A suggested menu and quote, adjusted for dietary needs and allergies.</p>
-          </li>
-          <li>
-            <h3>Planning</h3>
-            <p>Timings, layout of food and service, equipment and any staff needed.</p>
-          </li>
-          <li>
-            <h3>The event</h3>
-            <p>Setup, service and clearing away, so you can spend the time with your guests.</p>
-          </li>
+        <div class="section-head">
+          <h2 class="split">From enquiry to evening</h2>
+        </div>
+        <ol class="process">
+          <li><h3>Enquiry</h3><p>Send the date, location and number of guests. You'll hear back within two working days.</p></li>
+          <li><h3>Menu proposal</h3><p>A suggested menu and quote, adjusted for dietary needs and allergies.</p></li>
+          <li><h3>Planning</h3><p>Timings, food layout, service, equipment and any staff needed.</p></li>
+          <li><h3>The event</h3><p>Setup, service and clearing away, so you can spend the time with your guests.</p></li>
         </ol>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap split">
-        <h2>Good to know</h2>
-        <div>
-          <p>Menus change with the seasons and are written for each event. Vegetarian, vegan and allergy-friendly options are always available.</p>
-          <p class="muted">Please enquire at least three weeks ahead for larger events.</p>
+      <div class="wrap">
+        <div class="panel reveal">
+          <div>
+            <h2>Good to know</h2>
+          </div>
+          <div>
+            <p class="muted">Menus change with the seasons and are written for each event.</p>
+            <ul class="ticks">
+            <li>Vegetarian and vegan options always available</li>
+            <li>Allergies and dietary needs taken seriously</li>
+            <li>Regional, seasonal ingredients</li>
+            <li>Please enquire three weeks ahead for larger events</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="cta">
+      <div class="cta-orb" aria-hidden="true"></div>
       <div class="wrap">
-        <h2>Planning an event?</h2>
-        <a class="button" href="contact.html?topic=catering">Send an enquiry</a>
+        <h2 class="cta-title">Planning<br><em>an event?</em></h2>
+        <div class="cta-row">
+          <a class="btn" href="contact.html?topic=catering">Send an enquiry <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <p class="muted">Free first call, no obligation.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="imprint.html">Imprint</a></li>
-      </ul>
+      <div class="footer-top">
+        <div>
+          <h3>New project?</h3>
+          <a class="footer-mail" href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="website-design.html">Website design</a></li>
+            <li><a href="game-design.html">Game design</a></li>
+            <li><a href="catering.html">Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Never Solutions</p>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Never Solutions, Tyrol, Austria</span>
+        <button class="to-top" type="button">Back to top</button>
+      </div>
     </div>
   </footer>
 

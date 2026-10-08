@@ -1,4 +1,4 @@
-# tobiasniederholzer.xyz
+# Never Solutions (tobiasniederholzer.xyz)
 
 Static website hosted on GitHub Pages. No build step: edit the HTML files and push.
 

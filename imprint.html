@@ -3,8 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Imprint | Tobias Niederholzer</title>
+  <title>Imprint | Never Solutions</title>
+  <meta name="description" content="Imprint of Never Solutions.">
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0f2624">
+  <link rel="canonical" href="https://tobiasniederholzer.xyz/imprint.html">
+  <meta property="og:title" content="Imprint | Never Solutions">
+  <meta property="og:description" content="Imprint of Never Solutions.">
+  <meta property="og:url" content="https://tobiasniederholzer.xyz/imprint.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +20,11 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Never Solutions</span></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">Tobias Niederholzer</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Never Solutions</a>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="website-design.html">Website design</a></li>
@@ -27,13 +34,15 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="contact.html">Start a project</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-intro">
+    <section class="page-hero">
       <div class="wrap">
-        <h1 class="display">Imprint</h1>
+        <h1 class="page-title split">Imprint</h1>
         <p class="lede">Information according to § 5 ECG and § 25 MedienG.</p>
       </div>
     </section>
@@ -42,6 +51,8 @@
       <div class="wrap details">
         <!-- Fill in your real details before going live. -->
         <dl>
+          <dt>Business name</dt>
+          <dd>Never Solutions</dd>
           <dt>Owner and responsible for content</dt>
           <dd>Tobias Niederholzer</dd>
           <dt>Address</dt>
@@ -61,11 +72,33 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="imprint.html">Imprint</a></li>
-      </ul>
+      <div class="footer-top">
+        <div>
+          <h3>New project?</h3>
+          <a class="footer-mail" href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="website-design.html">Website design</a></li>
+            <li><a href="game-design.html">Game design</a></li>
+            <li><a href="catering.html">Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Never Solutions</p>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Never Solutions, Tyrol, Austria</span>
+        <button class="to-top" type="button">Back to top</button>
+      </div>
     </div>
   </footer>
 

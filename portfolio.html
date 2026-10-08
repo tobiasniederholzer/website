@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | Tobias Niederholzer</title>
-  <meta name="description" content="Selected websites, games and catered events by Tobias Niederholzer.">
+  <title>Portfolio | Never Solutions</title>
+  <meta name="description" content="Selected websites, games and catered events by Never Solutions.">
+  <meta name="theme-color" content="#0f2624">
   <link rel="canonical" href="https://tobiasniederholzer.xyz/portfolio.html">
+  <meta property="og:title" content="Portfolio | Never Solutions">
+  <meta property="og:description" content="Selected websites, games and catered events by Never Solutions.">
+  <meta property="og:url" content="https://tobiasniederholzer.xyz/portfolio.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +19,11 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Never Solutions</span></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">Tobias Niederholzer</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Never Solutions</a>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="website-design.html">Website design</a></li>
@@ -28,20 +33,22 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="contact.html">Start a project</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-intro">
+    <section class="page-hero">
       <div class="wrap">
-        <h1 class="display">Portfolio</h1>
-        <p class="lede">A selection of recent work across websites, games and events.</p>
+        <h1 class="page-title split">Portfolio</h1>
+        <p class="lede reveal">A selection of recent work across websites, games and events.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="filters" role="group" aria-label="Filter projects">
+        <div class="filters reveal" role="group" aria-label="Filter projects">
           <button type="button" data-filter="all" aria-pressed="true">All work</button>
           <button type="button" data-filter="web" aria-pressed="false">Websites</button>
           <button type="button" data-filter="game" aria-pressed="false">Games</button>
@@ -49,76 +56,101 @@
         </div>
 
         <!--
-          HOW TO ADD A PROJECT
+          HOW TO ADD A REAL PROJECT
           1. Put an image in assets/projects/ (JPG or WebP, about 1600px wide).
-          2. Copy one <article> block below.
-          3. Inside .frame, replace the empty space with:
-             <img src="assets/projects/your-image.jpg" alt="Short description of the image">
-          4. Set data-category to web, game or catering.
-          5. Add class "wide" to make a project span two columns.
+          2. In a card, replace  <div class="g"></div>  with
+             <img src="assets/projects/your-image.jpg" alt="Short description">
+          3. Change the title and the two meta lines.
+          4. data-category = web, game or catering. Add "wide" to the class for a big card.
+          5. Change href="contact.html" to a project page or external link if you have one.
         -->
 
-        <div class="projects">
-          <article class="project wide" data-category="web">
-            <div class="frame"></div>
+        <div class="work-grid">
+          <a class="card wide reveal" href="contact.html" data-category="web" data-cursor="Ask">
+            <div class="art art-web"><div class="g"></div></div>
             <h3>Website for an architecture studio</h3>
-            <p class="meta">Website design, 2026</p>
-          </article>
-
-          <article class="project" data-category="game">
-            <div class="frame"></div>
+            <p class="meta"><span>Website design</span><span>2026</span></p>
+          </a>
+          <a class="card offset reveal" href="contact.html" data-category="game" data-cursor="Ask">
+            <div class="art art-game"><div class="g"></div></div>
             <h3>Location-based mobile game</h3>
-            <p class="meta">Game concept and design, 2026</p>
-          </article>
-
-          <article class="project" data-category="catering">
-            <div class="frame"></div>
+            <p class="meta"><span>Game concept and design</span><span>2026</span></p>
+          </a>
+          <a class="card reveal" href="contact.html" data-category="catering" data-cursor="Ask">
+            <div class="art art-food"><div class="g"></div></div>
             <h3>Exhibition opening, 80 guests</h3>
-            <p class="meta">Catering, 2026</p>
-          </article>
-
-          <article class="project" data-category="web">
-            <div class="frame"></div>
-            <h3>Landing page for a product launch</h3>
-            <p class="meta">Website design, 2025</p>
-          </article>
-
-          <article class="project" data-category="game">
-            <div class="frame"></div>
+            <p class="meta"><span>Catering</span><span>2026</span></p>
+          </a>
+          <a class="card reveal" href="contact.html" data-category="web" data-cursor="Ask">
+            <div class="art art-web art-alt"><div class="g"></div></div>
+            <h3>Product launch landing page</h3>
+            <p class="meta"><span>Website design</span><span>2025</span></p>
+          </a>
+          <a class="card reveal" href="contact.html" data-category="game" data-cursor="Ask">
+            <div class="art art-game art-alt"><div class="g"></div></div>
             <h3>Route planner with game mechanics</h3>
-            <p class="meta">Game design and prototype, 2025</p>
-          </article>
-
-          <article class="project wide" data-category="catering">
-            <div class="frame"></div>
+            <p class="meta"><span>Game design and prototype</span><span>2025</span></p>
+          </a>
+          <a class="card wide reveal" href="contact.html" data-category="catering" data-cursor="Ask">
+            <div class="art art-food art-alt"><div class="g"></div></div>
             <h3>Private dinner, seven courses</h3>
-            <p class="meta">Catering, 2025</p>
-          </article>
-
-          <article class="project" data-category="web">
-            <div class="frame"></div>
+            <p class="meta"><span>Catering</span><span>2025</span></p>
+          </a>
+          <a class="card wide reveal" href="contact.html" data-category="web" data-cursor="Ask">
+            <div class="art art-web"><div class="g"></div></div>
             <h3>Website for a lighting project</h3>
-            <p class="meta">Website design, 2025</p>
-          </article>
+            <p class="meta"><span>Website design</span><span>2025</span></p>
+          </a>
+          <a class="card offset reveal" href="contact.html" data-category="catering" data-cursor="Ask">
+            <div class="art art-food"><div class="g"></div></div>
+            <h3>Studio summer party</h3>
+            <p class="meta"><span>Catering</span><span>2025</span></p>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="cta">
+      <div class="cta-orb" aria-hidden="true"></div>
       <div class="wrap">
-        <h2>Want something like this?</h2>
-        <a class="button" href="contact.html">Get in touch</a>
+        <h2 class="cta-title">Want something<br><em>like this?</em></h2>
+        <div class="cta-row">
+          <a class="btn" href="contact.html">Start a project <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <p class="muted">Tell us what you're planning.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="imprint.html">Imprint</a></li>
-      </ul>
+      <div class="footer-top">
+        <div>
+          <h3>New project?</h3>
+          <a class="footer-mail" href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="website-design.html">Website design</a></li>
+            <li><a href="game-design.html">Game design</a></li>
+            <li><a href="catering.html">Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Never Solutions</p>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Never Solutions, Tyrol, Austria</span>
+        <button class="to-top" type="button">Back to top</button>
+      </div>
     </div>
   </footer>
 

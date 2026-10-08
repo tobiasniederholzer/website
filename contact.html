@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Tobias Niederholzer</title>
-  <meta name="description" content="Get in touch about a website, a game or a catered event.">
+  <title>Contact | Never Solutions</title>
+  <meta name="description" content="Start a project with Never Solutions: website design, game design or catering.">
+  <meta name="theme-color" content="#0f2624">
   <link rel="canonical" href="https://tobiasniederholzer.xyz/contact.html">
+  <meta property="og:title" content="Contact | Never Solutions">
+  <meta property="og:description" content="Start a project with Never Solutions: website design, game design or catering.">
+  <meta property="og:url" content="https://tobiasniederholzer.xyz/contact.html">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +19,11 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Never Solutions</span></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">Tobias Niederholzer</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Never Solutions</a>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="website-design.html">Website design</a></li>
@@ -28,58 +33,61 @@
           <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="contact.html">Start a project</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-intro">
+    <section class="page-hero">
       <div class="wrap">
-        <h1 class="display">Contact</h1>
-        <p class="lede">Tell me what you're planning. I reply to every message within two working days.</p>
+        <h1 class="page-title split">Let's talk</h1>
+        <p class="lede reveal">Tell us what you're planning. We reply to every message within two working days.</p>
+        <div class="tagline reveal"><span class="status-pill">Taking new projects</span></div>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap contact-grid">
         <!-- Replace YOUR_FORM_ID with the ID from formspree.io (free plan) -->
-        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="reveal">
+          <fieldset class="topics">
+            <legend>What is it about?</legend>
+            <input type="radio" id="t-web" name="topic" value="website" checked><label for="t-web">Website design</label>
+            <input type="radio" id="t-game" name="topic" value="game"><label for="t-game">Game design</label>
+            <input type="radio" id="t-cat" name="topic" value="catering"><label for="t-cat">Catering</label>
+            <input type="radio" id="t-other" name="topic" value="other"><label for="t-other">Something else</label>
+          </fieldset>
+
           <div class="row-2">
             <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder=" " required>
+              <label for="name">Your name</label>
             </div>
             <div class="field">
+              <input id="email" name="email" type="email" autocomplete="email" placeholder=" " required>
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
             </div>
           </div>
 
           <div class="field">
-            <label for="topic">What is it about?</label>
-            <select id="topic" name="topic">
-              <option value="website">Website design</option>
-              <option value="game">Game design</option>
-              <option value="catering">Catering</option>
-              <option value="other">Something else</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="Goals, timing, budget, or for catering: date, place and number of guests"></textarea>
+            <textarea id="message" name="message" placeholder=" " required></textarea>
+            <label for="message">Goals, timing, budget, or date and guests for catering</label>
           </div>
 
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
 
-          <button class="button" type="submit">Send message</button>
+          <div>
+            <button class="btn" type="submit">Send message <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          </div>
           <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
         </form>
 
-        <aside class="details">
+        <aside class="details reveal">
           <dl>
             <dt>Email</dt>
             <dd><a href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a></dd>
-            <dt>Based in</dt>
+            <dt>Studio</dt>
             <dd>Innsbruck, Tyrol, Austria</dd>
             <dt>Working</dt>
             <dd>On site in Tyrol, remote everywhere</dd>
@@ -93,11 +101,33 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="imprint.html">Imprint</a></li>
-      </ul>
+      <div class="footer-top">
+        <div>
+          <h3>New project?</h3>
+          <a class="footer-mail" href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="website-design.html">Website design</a></li>
+            <li><a href="game-design.html">Game design</a></li>
+            <li><a href="catering.html">Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Never Solutions</p>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Never Solutions, Tyrol, Austria</span>
+        <button class="to-top" type="button">Back to top</button>
+      </div>
     </div>
   </footer>
 

@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tobias Niederholzer | Website design, game design, catering</title>
-  <meta name="description" content="Tobias Niederholzer designs websites, games and catered events from Tyrol, Austria.">
+  <title>Never Solutions | Website design, game design, catering</title>
+  <meta name="description" content="Never Solutions is a design studio from Tyrol, Austria for website design, game design and catering.">
+  <meta name="theme-color" content="#0f2624">
   <link rel="canonical" href="https://tobiasniederholzer.xyz/">
-  <meta property="og:title" content="Tobias Niederholzer">
-  <meta property="og:description" content="Websites, games and catered events, designed with an architect's eye.">
+  <meta property="og:title" content="Never Solutions | Website design, game design, catering">
+  <meta property="og:description" content="Never Solutions is a design studio from Tyrol, Austria for website design, game design and catering.">
   <meta property="og:url" content="https://tobiasniederholzer.xyz/">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -18,11 +19,11 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span>Never Solutions</span></div>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="./">Tobias Niederholzer</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>Never Solutions</a>
       <nav class="nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="website-design.html">Website design</a></li>
@@ -32,60 +33,161 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <a class="nav-cta" href="contact.html">Start a project</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
       <div class="wrap">
-        <h1 class="display">Spaces you can click, play and taste.</h1>
-        <p class="lede">I'm Tobias, trained in architecture and working in Tyrol. I design websites, games and catered events with the same attention to how people move through a space.</p>
+        <h1 class="wordmark" aria-label="Never Solutions">
+          <span class="line">Never</span>
+          <span class="line">Solutions</span>
+        </h1>
+        <div class="hero-foot">
+          <p class="lede">We design
+            <span class="rotator" aria-hidden="true"><span>websites</span><span>games</span><span>dinners</span></span><span class="sr-only">websites, games and dinners</span>
+            people remember.</p>
+          <div class="side">
+            <p>An independent design studio from Tyrol, Austria. Never ordinary, always solved.</p>
+            <a class="btn ghost" href="contact.html">Start a project <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">Scroll</div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Website design</span><span>Game design</span><span>Catering</span><span>Never ordinary</span><span>Always solved</span>
+        <span>Website design</span><span>Game design</span><span>Catering</span><span>Never ordinary</span><span>Always solved</span>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="split">Three disciplines, one way of thinking</h2>
+          <p class="reveal">Every project starts with the people who will use it, and works outwards to structure and detail.</p>
+        </div>
+        <ul class="rows">
+          <li class="row"><a href="website-design.html">
+            <span class="row-name">Website design</span>
+            <p class="row-desc">Fast, clear sites for studios, practices and businesses. Designed, built and handed over ready to edit.</p>
+            <span class="row-go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          </a></li>
+          <li class="row"><a href="game-design.html">
+            <span class="row-name">Game design</span>
+            <p class="row-desc">Levels, systems and playable prototypes for digital, mobile and tabletop games.</p>
+            <span class="row-go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          </a></li>
+          <li class="row"><a href="catering.html">
+            <span class="row-name">Catering</span>
+            <p class="row-desc">Seasonal food for private dinners, openings and company events across Tyrol.</p>
+            <span class="row-go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          </a></li>
+        </ul>
       </div>
     </section>
 
-    <div class="wrap">
-      <nav class="plan" aria-label="Services">
-        <a class="room room-a" href="website-design.html">
-          <span class="room-name">Website design</span>
-          <p class="room-desc">Clear, fast sites for studios, practices and small businesses. Designed, built and handed over so you can edit them yourself.</p>
-        </a>
-        <a class="room room-b" href="game-design.html">
-          <span class="room-name">Game design</span>
-          <p class="room-desc">Levels, systems and prototypes for digital and tabletop games.</p>
-        </a>
-        <a class="room room-c" href="catering.html">
-          <span class="room-name">Catering</span>
-          <p class="room-desc">Seasonal food for private dinners, openings and team events.</p>
-        </a>
-      </nav>
-    </div>
+    <section class="section">
+      <div class="wrap">
+        <p class="statement">A homepage, a game level and a dinner menu follow the same rules as a good building: who arrives, what they need first, and how they <em>find their way</em> to the rest. We design that path, then make it feel <em>effortless.</em></p>
+      </div>
+    </section>
 
     <section class="section">
-      <div class="wrap split">
-        <h2>One way of working</h2>
-        <div>
-          <p>Architecture taught me to start with the people who will use a place, then work outwards to structure and detail. A homepage, a game level and a dinner menu follow the same order: who arrives, what they need first, and how they find their way to the rest.</p>
-          <p class="muted">Every project gets one contact from first call to handover: me.</p>
-          <p><a href="portfolio.html">See selected work</a></p>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="split">Selected work</h2>
+          <a class="btn ghost reveal" href="portfolio.html">View portfolio <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        </div>
+        <div class="work-grid">
+          <a class="card wide reveal" href="contact.html" data-category="web" data-cursor="Ask">
+            <div class="art art-web"><div class="g"></div></div>
+            <h3>Website for an architecture studio</h3>
+            <p class="meta"><span>Website design</span><span>2026</span></p>
+          </a>
+          <a class="card offset reveal" href="contact.html" data-category="game" data-cursor="Ask">
+            <div class="art art-game"><div class="g"></div></div>
+            <h3>Location-based mobile game</h3>
+            <p class="meta"><span>Game design</span><span>2026</span></p>
+          </a>
+          <a class="card reveal" href="contact.html" data-category="catering" data-cursor="Ask">
+            <div class="art art-food"><div class="g"></div></div>
+            <h3>Exhibition opening, 80 guests</h3>
+            <p class="meta"><span>Catering</span><span>2026</span></p>
+          </a>
+          <a class="card wide reveal" href="contact.html" data-category="web" data-cursor="Ask">
+            <div class="art art-web art-alt"><div class="g"></div></div>
+            <h3>Product launch landing page</h3>
+            <p class="meta"><span>Website design</span><span>2025</span></p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="principles reveal">
+          <div>
+            <h3>One contact</h3>
+            <p>The person you brief is the person who designs, builds and delivers. Nothing gets lost in handovers.</p>
+          </div>
+          <div>
+            <h3>Fixed prices</h3>
+            <p>A written proposal with a clear scope and a fixed price before any work starts.</p>
+          </div>
+          <div>
+            <h3>Built to last</h3>
+            <p>Accessible, fast and easy to maintain, so your project keeps working long after launch.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="cta">
+      <div class="cta-orb" aria-hidden="true"></div>
       <div class="wrap">
-        <h2>Have a project in mind?</h2>
-        <a class="button" href="contact.html">Get in touch</a>
+        <h2 class="cta-title">Have an idea?<br><em>Let's solve it.</em></h2>
+        <div class="cta-row">
+          <a class="btn" href="contact.html">Start a project <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+          <p class="muted">Replies within two working days.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Tobias Niederholzer, Tyrol, Austria</span>
-      <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="imprint.html">Imprint</a></li>
-      </ul>
+      <div class="footer-top">
+        <div>
+          <h3>New project?</h3>
+          <a class="footer-mail" href="mailto:hello@tobiasniederholzer.xyz">hello@tobiasniederholzer.xyz</a>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="website-design.html">Website design</a></li>
+            <li><a href="game-design.html">Game design</a></li>
+            <li><a href="catering.html">Catering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Studio</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-giant" aria-hidden="true">Never Solutions</p>
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Never Solutions, Tyrol, Austria</span>
+        <button class="to-top" type="button">Back to top</button>
+      </div>
     </div>
   </footer>
 
